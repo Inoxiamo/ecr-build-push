@@ -1,7 +1,7 @@
 # README
 
 ## Overview
-This document provides detailed information on the configuration and operation of the Docker image building and pushing system. The system is designed to automate Docker operations based on environment-specific settings defined in a `config-ebp.json` file located in the same directory as the script.
+This document provides detailed information on the configuration and operation of the Docker image building and pushing system with ecr. The system is designed to automate Docker operations based on environment-specific settings defined in a `config-ebp.json` file located in the same directory as the script.
 
 ## Configuration File (`config-ebp.json`)
 The configuration file is a JSON document that specifies various settings for different environments such as development (dev), user acceptance testing (uat), etc. The file should be named `config-ebp.json` and located in the same directory from which the script is executed.
@@ -63,7 +63,7 @@ The script performs the following operations based on the environment configurat
 ### Usage
 To use this script, execute it from the directory containing `config-ebp.json`. Specify the environment as an argument:
 ```bash
-./your_script.sh dev
+./ebp dev
 ```
 
 ### FAQs
