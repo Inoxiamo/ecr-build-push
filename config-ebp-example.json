@@ -1,0 +1,23 @@
+{
+    "env": [
+        {
+            "name": "dev",
+            "aws_region": "us-central-1",
+            "aws_account_id": "263786786",
+            "aws_profile": "profile-dev",
+            "docker_arg_vars": {
+                "ARG1": "VALUE",
+                "ARG2": "VALE2"
+            }
+        },
+        {
+            "name": "uat",
+            "aws_region": "us-east-1",
+            "aws_account_id": "123456789012",
+            "aws_profile": "default",
+            "docker_image_name": "my-docker-image",
+            "docker_image_tag": "latest",
+            "docker_file_path": "Dockerfile"
+        }
+    ]
+}
