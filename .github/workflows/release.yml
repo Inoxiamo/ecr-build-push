@@ -43,7 +43,7 @@ jobs:
       - name: Build for ${{ matrix.goos }}/${{ matrix.goarch }}
         run: |
           mkdir -p artifacts  # Crea la cartella artifacts
-          GOOS=${{ matrix.goos }} GOARCH=${{ matrix.goarch }} go build -o artifacts/${{ matrix.output_name }} ./cmd/ebp
+          GOOS=${{ matrix.goos }} GOARCH=${{ matrix.goarch }} go build -o artifacts/${{ matrix.output_name }} ./cmd/dockerops
 
       # Debug: Verifica che i file siano stati creati correttamente
       - name: List files in artifacts directory (debug)
